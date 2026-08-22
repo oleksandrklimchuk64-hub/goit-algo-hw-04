@@ -6,7 +6,7 @@ def total_salary(path):
         total = 0
         for line in lines:
             parts = line.split(",")
-            salary = int(parts[1])
+            salary = float(parts[1])
             total += salary
         if len(lines) == 0:
             return 0, 0
